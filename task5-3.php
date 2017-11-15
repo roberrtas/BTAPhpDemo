@@ -11,7 +11,7 @@
         $numbers = [-10, 0, 2, 9, -5];
         rsort($numbers);
         foreach($numbers as $number) {
-            echo "$number\n";
+            echo $number . " ";
         }
     ?>
 </body>
