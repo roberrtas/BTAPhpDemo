@@ -25,6 +25,10 @@
         if(!$result){
             die("Failed: " . $connection->error);
         }
+
+         //redirect browser to not add more records when refreshing page
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
     }
 ?>
 
@@ -105,7 +109,7 @@
                         $time = $row['time'];
                         echo "<option value='$id'>
                                 id=$id; date=$date; number=$number; distance=$distance; time=$time;
-                             </option>";
+                              </option>";
                     }
                 ?>
             </select>
