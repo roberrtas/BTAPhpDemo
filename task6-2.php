@@ -31,6 +31,19 @@
 			return ($num == array_sum($arrfactor) / 2) ? "true" : "false";
 		}
 		echo isPerfect(10);
+
+
+		// for ($i=1; $i <= 1000 ; $i++) { 
+		// 	if (arTobulas($i)) {
+		// 		echo $i . "<br>";
+		// 	}
+		// }
+
+		// function arTobulas($x) {
+		// 	for($i = 1; $i < $x; $i ++){
+					
+		// 	}
+		// }
     ?>
 </body>
 </html>
