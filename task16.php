@@ -18,7 +18,7 @@
         $distance = $_POST['distance'];
         $time = $_POST['time'];
 
-        $sql = "INSERT INTO radars(date, number, distance, time) 
+        $sql = "INSERT INTO radars(`date`, `number`, `distance`, `time`) 
                 VALUES ('$date', '$number', '$distance', '$time')";
 
         $result = $connection->query($sql);
@@ -67,10 +67,10 @@
             $time = $_POST['time'];
     
             $sql = "UPDATE radars
-                    SET date = '$date', 
-                        number = '$number', 
-                        distance = '$distance', 
-                        time = '$time' 
+                    SET `date` = '$date', 
+                        `number` = '$number', 
+                        `distance` = '$distance', 
+                        `time` = '$time' 
                     WHERE id=$id";
     
             $result = $connection->query($sql);
@@ -114,9 +114,9 @@
                     }
                 ?>
             </select>
+            <?php endif; ?>
             <br><br>
             <button class="btn btn-warning" type="submit" name="submit1">Update</button>
-            <?php endif; ?>
             <br><br>
     </form>
     <h1>Delete record</h1>
@@ -167,10 +167,10 @@
                     }
                 ?>
             </select>
+            <?php endif; ?>
             <br><br>
             <button class="btn btn-danger" type="submit" name="delete">Delete</button>
             <button class="btn btn-danger" type="submit" name="deleteall">DeleteAll</button>
-            <?php endif; ?>
             <br><br>
     </form>
     <?php
