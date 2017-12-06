@@ -114,9 +114,9 @@
                     }
                 ?>
             </select>
-            <?php endif; ?>
             <br><br>
             <button class="btn btn-warning" type="submit" name="submit1">Update</button>
+            <?php endif; ?>
             <br><br>
     </form>
     <h1>Delete record</h1>
@@ -167,10 +167,10 @@
                     }
                 ?>
             </select>
-            <?php endif; ?>
             <br><br>
             <button class="btn btn-danger" type="submit" name="delete">Delete</button>
             <button class="btn btn-danger" type="submit" name="deleteall">DeleteAll</button>
+            <?php endif; ?>
             <br><br>
     </form>
     <?php
